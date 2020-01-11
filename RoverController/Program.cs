@@ -6,16 +6,15 @@ namespace RoverController
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            IVehicle rover = new Rover(0, 0, Direction.N);
+            IVehicle rover = new Rover(1, 2, Direction.N);
             string input;
 
             do
             {
                 Console.WriteLine($"\n\nCurrent rover postion: {rover}");
-
-                Console.WriteLine("\nPlease enter the movement info(Only M, L or R) or E to exit:");
+                Console.WriteLine("Please enter the movement info(Only M, L or R) or E to exit:");
 
                 input = Console.ReadLine().ToUpper();
 
