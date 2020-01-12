@@ -6,9 +6,15 @@ namespace RoverController
 {
     public class Rover: IVehicle
     {
+        #region Properties
+
         int X { get; set; }
         int Y { get; set; }
         Direction Direction { get; set; }
+
+        #endregion
+
+        #region constructors
 
         public Rover(int x, int y, Direction direction)
         {
@@ -17,6 +23,9 @@ namespace RoverController
             Direction = direction;
         }
 
+        #endregion
+
+        #region Movement related methods
 
         public void Move()
         {
@@ -76,6 +85,8 @@ namespace RoverController
                     break;
             }
         }
+
+        #endregion
 
         public override string ToString()
         {

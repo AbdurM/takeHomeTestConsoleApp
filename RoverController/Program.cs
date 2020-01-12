@@ -25,7 +25,9 @@ namespace RoverController
 
                 foreach (var character in charArray)
                 {
-                    switch (character.ToMovementEnum())
+                    var movement = character.ToMovementEnum();
+
+                    switch (movement)
                     {
                         case Movement.Move:
                             rover.Move();
