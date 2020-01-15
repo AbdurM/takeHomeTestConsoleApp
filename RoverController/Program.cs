@@ -38,8 +38,6 @@ namespace RoverController
                         case Movement.Right:
                             rover.TurnRight();
                             break;
-                        default:
-                            throw new Exception("Movement not identified");
                     }
                 }
 
